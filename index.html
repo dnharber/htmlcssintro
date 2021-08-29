@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Playfair+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="lostpet logo" class="logo" />
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img
+              src="images/ham.svg"
+              alt="toggle menu"
+              class="menu"
+              id="menu"
+            />
+          </a>
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="images/exit.svg" alt="exit menu" />
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lost Pets</a></li>
+            <li><a href="#">Found Pets</a></li>
+            <li><a href="#">Helping Pets</a></li>
+            <li><a href="#">Shelters</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Reuniting Best Friends</h1>
+
+      <div class="petswide">
+        <img src="images/petswide1.png" alt="petswide" />
+      </div>
+      <p class="subhead">Help pets like these find their home again.</p>
+    </div>
+
+    <div class="help">
+      <h2>Recently Found Pets</h2>
+    </div>
+
+    <div class="horizontal-container">
+      <div class="sliding-container">
+        <div class="foundpets">
+          <img src="images/dog1.jpeg" alt="dog1" />
+          <p class="pettext">Tom was reunited with Bongo</p>
+        </div>
+        <div class="foundpets">
+          <img src="images/dog2.jpeg" alt="dog2" />
+          <p class="pettext">Jessica was reunited with Marley</p>
+        </div>
+        <div class="foundpets">
+          <img src="images/dog3.jpeg" alt="dog3" />
+          <p class="pettext">Alex and Mary were reunited with Leo</p>
+        </div>
+        <div class="foundpets">
+          <img src="images/cat1.jpeg" alt="cat1" />
+          <p class="pettext">Lauren was reunited with Simba</p>
+        </div>
+        <div class="foundpets">
+          <img src="images/cat2.jpeg" alt="cat2" />
+          <p class="pettext">Alison was reunited with Luna</p>
+        </div>
+        <div class="foundpets">
+          <img src="images/cat3.jpeg" alt="cat3" />
+          <p class="pettext">Emma was reunited with Tardar Sauce</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-container">
+      <h3>Planning to Adopt a Pet?</h3>
+      <div class="info">
+        <h4>Checklist for Adopting a Pet</h4>
+        <h4>Pet Adoption FAQ</h4>
+        <p class="info-container-p">
+          Help make the transition, as smooth as possible
+        </p>
+        <p class="info-container-p">Wondering what to expect from adoption</p>
+        <a href="#" class="learn-btn">Learn More</a>
+        <a href="#" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img src="images/logofooter.svg" alt="logo" class="logo-footer" />
+          </a>
+          <p class="address">
+            Hvamsvegur 845 Flúðir <br />
+            Iceland
+          </p>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function (e) {
+        nav.classList.add("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
